@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #ddd;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    display: inline-block;
+    color:white;
+    background-color:olive;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 5s;
+}
+nav ul li a:hover{
+    background-color: black;
+}
+nav ul li ul{
+    position: absolute;
+    left: 10px;
+    top: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+nav ul li:hover ul{
+    top:100%;
+   visibility: visible;
+   opacity: 1;
+}
+nav ul li ul li{
+    display: block;
+}
